@@ -1,13 +1,15 @@
 {
-  "name": "react-mentions",
-  "version": "0.0.0-development",
+  "name": "@spotxyz/react-mentions",
+  "version": "4.3.1",
   "description": "React mentions input",
   "main": "dist/react-mentions.cjs.js",
   "module": "dist/react-mentions.esm.js",
+  "types": "./node_modules/@types/react-mentions/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
+    "prepublishOnly": "yarn run build",
     "build": "preconstruct build",
     "format": "prettier --write --no-semi --single-quote --trailing-comma es5 \"{src,test,demo/src}/**/*.js\"",
     "lint": "eslint --max-warnings=0 --ext .js src test demo",
@@ -18,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/signavio/react-mentions.git"
+    "url": "https://github.com/spotxyz/react-mentions.git"
   },
   "keywords": [
     "react",
@@ -34,9 +36,9 @@
   "author": "Jan-Felix Schwarz",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/signavio/react-mentions/issues"
+    "url": "https://github.com/spotxyz/react-mentions/issues"
   },
-  "homepage": "https://github.com/signavio/react-mentions",
+  "homepage": "https://github.com/spotxyz/react-mentions",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
@@ -47,6 +49,7 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@types/react-mentions": "^4.1.5",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^8.0.6",
     "case-sensitive-paths-webpack-plugin": "^2.2.0",
